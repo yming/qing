@@ -1,4 +1,0 @@
-qing
-====
-
-g qing blog
