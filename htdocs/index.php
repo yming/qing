@@ -1,15 +1,15 @@
 <?php
 
-//~ phpinfo();
-
     require_once "../include/initsmarty.php";
     //~ echo(__DIR__);
+    
+    require_once "../libs/";
     
     $db = new mysqli('localhost', 'root', 'root', 'qing');
     $sql = 'select * from posts limit 10';
     $result = $db->query($sql);
     $r_num = $result->num_rows;
-    $row = $result->fetch_array();var_export($row);exit;
+    $row = $result->fetch_row();var_export($row);exit;
     //~ $m_list = array_flip($row);
     
     
