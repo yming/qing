@@ -7,6 +7,9 @@ class Resources {
     
     public function __construct() {
         # code...
+
+        require_once "ExtSmarty.php"; 
+        $this->_tpl = new ExtSmarty();
     }
 
     /*
