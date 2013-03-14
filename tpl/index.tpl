@@ -6,5 +6,9 @@
     
     <body>
         <p>{{$content}}</p>
+        <p>id:{{$post.id}}</p>
+        <p>uid:{{$post.uid}}</p>
+        <p>content:{{$post.content}}</p>
+        <p>date:{{$post.post_date}}</p>
     </body>
 </html>
