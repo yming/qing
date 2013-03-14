@@ -3,7 +3,6 @@
 * 
 */
 
-
 require_once 'Resources.php';
 require_once "../includes/initsmarty.php";
 class index extends Resources
