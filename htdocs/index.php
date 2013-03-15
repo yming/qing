@@ -4,12 +4,12 @@
 */
 
 require_once 'Resources.php';
-require_once "../includes/initsmarty.php";
 class index extends Resources
 {
     
     function __construct()
     {
+        parent::__construct();
         $this->index();
     }
 
@@ -37,11 +37,12 @@ class index extends Resources
         
         
         $content = "这里就是主页哦 亲！";
-        $smarty->assign('title', '主页');
-        $smarty->assign('content', $content);
+        // var_export($this->_tpl);exit;
+        $this->_tpl->assign('title', '主页');
+        $this->_tpl->assign('content', $content);
         // $smarty->assign('r_num', $r_num);
-        $smarty->assign('post', $row);
-        $smarty->display('/data/test/www/tpl/index.tpl');
+        $this->_tpl->assign('post', $row);
+        $this->_tpl->display('index.tpl');
     }
 }
 new index();

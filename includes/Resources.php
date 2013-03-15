@@ -4,9 +4,11 @@
 * @author yangming
 */
 class Resources {
-    
+    public $_tpl = null;
+
     public function __construct() {
-        # code...
+        require_once 'ExtSmarty.php';
+        $this->_tpl = new ExtSmarty();
     }
 
     /*
