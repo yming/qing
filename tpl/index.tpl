@@ -4,6 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap.min.css">
     <link rel="stylesheet/less" type="text/css" href="/css/frame.less">
 
@@ -21,12 +22,12 @@
 <p>content:{{$post.content}}</p>
 <p>date:{{$post.post_date}}</p>
 -->
-    <div class="container">
-        <!-- header -->
+    <!-- header -->
+    <div class="header_box">
         <div class="header">
             <div class="row menu_bar">
                 <div class="span1">
-                    <img class="img-rounded logo" src="">
+                    <!-- <img class="img-rounded logo" src=""> -->
                 </div>
                 <div class="span2">
                     <h1>Zing</h1>
@@ -57,42 +58,93 @@
                     </ul>
                 </div>
             </div>
-
+        
             <!-- publisher -->
-            <div class="row publisher_box">
-                <div class="span12">
-                    publisher
+            <div class="publisher_box">
+                <div class="icon_box">
+                    <a href="#"><img src="img/test/head.jpeg"></a>
+                </div>
+                <div class="publisher">
+                    <div class="text"><a href="#"><img title="Text" src="" />Text</a></div>
+                    <div class="text"><a href="#"><img title="Image" src="" />Image</a></div>
+                    <div class="text"><a href="#"><img title="Audio" src="" />Audio</a></div>
+                    <div class="text"><a href="#"><img title="Video" src="" />video</a></div>
+                </div>
+                <div class="search">
+                    <div class="input-append">
+                        <input class="span2" placeholder="Tell me what you wanna see?" id="appendedInputButton" type="text">
+                        <button class="btn" type="button">Search</button>
+                    </div>
                 </div>
             </div>
             <!-- /publisher -->
         </div>
-        <!-- /header -->
-
-        <!-- main content -->
-        <div class="row">
-            <!-- feed list -->
-            <div class="span9">
-                Body content 
-            </div>
-            <!-- /feed list -->
-
-            <!-- sidebar -->
-            <div class="span3">
-                Sidebar content 
-            </div>
-            <!-- /sidebar -->
-        </div>
-        <!-- /main content -->
-
-        <!-- footer -->
-        <div class="row">
-            <div class="span12">
-                footer
-            </div>
-        </div>
-        <!-- /footer -->
-
-        <div class="affix back_top"><a href="#">up</a></div>
     </div>
+    <!-- /header -->
+
+    <!-- main content -->
+    <div class="main clearfix">
+        <!-- feed list -->
+        <div class="feed_list">
+            <!-- feed -->
+            <div class="feed clearfix">
+                <div class="user_icon">
+                    <a title="userTitle" href="#"><img src="/img/test/head.jpeg"></a>
+                </div>
+
+                <div class="feed_box">
+                    <a class="user_title">化学<span class="img_count">（16张）</span></a>
+                    <span class="feed_time">15:30</span>
+                    <h3 class="blog_title">3月21日《自然》杂志精选</h3>
+
+                    <!-- Text -->
+                    <div class="content_text">
+                        <div class="fimg">
+                            <a href="#"><img src="/img/test/2.jpg"></a>
+                        </div>
+                        <div class="content">
+                            <p>大脑中的语言组织方式说话的动作需要嘴唇、下巴、舌头和喉部的活动在时间上精确协调。人感觉运动皮层中的多电极记录显示，语言中所涉及的大脑区域是根据面部和声带的一种&躯体特定区&表示方式布局的，其中大量细胞相应于特定语音特征。研究人员特别感兴趣的是位于&腹侧感觉运动皮层&&最背端&的另一个喉部表示，它可能是专为控制语言而形成的一个特征。 环RNA怎样像海绵一... <a class="show_full">阅读全文</a></p>
+                        </div>
+                    </div>
+                    <!-- /Text -->
+
+                    <div class="feed_control">
+                        <div class="feed-tag">
+                            <a class="tag" href="#">#科技</a>
+                            <a class="tag" href="#">#材料</a>
+                        </div>
+                        <div class="feed-act">
+                            <a class="like_num">66</a>
+                            <a class="feed_share">share</a>
+                            <a class="feed_cmt">comment</a>
+                            <a class="feed_like">like</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- /feed -->
+        </div>
+        <!-- /feed list -->
+
+        <!-- sidebar -->
+        <div class="side_bar">
+            Sidebar content 
+        </div>
+        <!-- /sidebar -->
+    </div>
+    <!-- /main content -->
+    
+    <!-- footer -->
+    <div class="footer">
+        Copyright Info!
+    </div>
+    <!-- /footer -->
+
+    <div class="affix back_top"><a title="返回顶部" href="#">up</a></div>
+
+    <script type="text/javascript">
+        less.watch();
+    </script>
 </body>
 </html>
