@@ -4,6 +4,7 @@
 @bg_blue: #468ECC;
 @bg_grey: #E0E1E2;
 @white: #FFFFFF;
+@bg_feed: @white;
 
 @main_width: 940px;
 @sidebar_width: 235px;
@@ -11,51 +12,19 @@
 @border_dot: 1px dotted #CFDADA;
 
 
+body {
+    background-color: @test_bg;
+    font-family: "Microsoft Yahei";
+}
+
+p {
+    font-size: 16px;
+}
+
 .container {
     position: relative;
 }
 
-/*返回顶端*/
-.back_top {
-    position: fixed;
-    bottom: 50px;
-    right: 50;
-
-    a {
-        background: url(/img/btt-new.png) no-repeat scroll 7px 14px rgba(0,0,0,0.3);
-        background: url(/img/btt-new.png) no-repeat scroll 7px 14px #000url(0/);
-        filter: alpha(opacity=30);
-        /*box-shadow: inset 0 0 5px rgba(0,0,0,0.4);*/
-        display: block;
-        float: left;
-        height: 51px;
-        margin-bottom: 15px;
-        outline: 0 none;
-        position: relative;
-        text-indent: -9999em;
-        width: 50px;
-        /*transition-property: margin,background-position;
-        transition-duration: 0.5s;
-        transition-timing-function: ease;
-        -webkit-transition-property: margin background-position;
-        -webkit-transition-duration: 0.5s;
-        -webkit-transition-timing-function: ease;
-        -moz-transition-property: margin background-position;
-        -moz-transition-duration: 0.5s;
-        -moz-transition-timing-function: ease;
-        -o-transition-property: margin background-position;
-        -o-transition-duration: 0.5s;
-        -o-transition-timing-function: ease;*/
-    }
-
-    a:hover {
-        filter: alpha(opacity=40);
-        /*box-shadow: inset 0 0 5px rgba(0,0,0,0.5);*/
-        background-color: #000url(0/);
-        background-color: rgba(0,0,0,0.6);
-        /*background-position: 7px -51px;*/
-    }
-}
 
 .header, .main, .footer {
     width: @main_width;
@@ -132,11 +101,12 @@
 
 .main {
     .feed_list {
-        background: @test_bg;
+        @feed_width: @main_width - @sidebar_width; /*940-235=705*/
         float: left;
-        width: @main_width - @sidebar_width;
+        width: @feed_width;
 
         .feed {
+            padding: 20px 0;
             .user_icon{
                 height: 100px;
                 width: 100px;
@@ -148,9 +118,71 @@
                 }
             }
 
-            .feed_box {
+            .feed_conbox {
+                @feed_conbox_width: @feed_width - 160; /*705-160=545*/
                 float: left;
-                margin-left: 110px;
+                width: @feed_conbox_width; 
+                /*margin-left: 20px;*/
+                background-color: @bg_feed; /*white*/
+                padding: 20px 30px;
+
+                .zhan_title {
+                    font-size: 16px;
+                    color: #626264;
+                    text-decoration: none;
+                }
+
+                .blog_title {
+                    .img_count {
+                        font-size: 14px;
+                        color: #D8D8DB;
+                    }
+                }
+
+                .feed_time {
+                    float: right;
+                    color: #8F8F91;
+                    visibility: hidden;
+                }
+
+
+                .content_text {
+                    .fimg {
+                        float: left;
+                        width: 250px;
+                        text-align: center;
+                    }
+                    .content {
+                        float: left;
+                        width: 275px;
+                        margin-left: 15px; 
+
+                        .show_full {
+                            float: right;
+                        }
+                    }
+                }
+
+                .feed_control {
+                    margin-top: 15px;
+
+                    .feed_tag {
+                        float: left;
+                    }
+                    .feed_act {
+                        float: right;
+
+                        a {
+                            margin: 0 7px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .feed:hover {
+            .feed_time {
+                visibility: visible;
             }
         }
     }
@@ -172,4 +204,59 @@
     border-top: @border_dot;
     border-bottom: @border_dot;
     margin: 10px auto;
+}
+
+/*返回顶端*/
+.back_top {
+    position: fixed;
+    bottom: 50px;
+    right: 50;
+
+    a {
+        background: url(/img/btt-new.png) no-repeat scroll 7px 14px rgba(0,0,0,0.3);
+        background: url(/img/btt-new.png) no-repeat scroll 7px 14px #000url(0/);
+        filter: alpha(opacity=30);
+        /*box-shadow: inset 0 0 5px rgba(0,0,0,0.4);*/
+        display: block;
+        float: left;
+        height: 51px;
+        margin-bottom: 15px;
+        outline: 0 none;
+        position: relative;
+        text-indent: -9999em;
+        width: 50px;
+        /*transition-property: margin,background-position;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        -webkit-transition-property: margin background-position;
+        -webkit-transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-property: margin background-position;
+        -moz-transition-duration: 0.5s;
+        -moz-transition-timing-function: ease;
+        -o-transition-property: margin background-position;
+        -o-transition-duration: 0.5s;
+        -o-transition-timing-function: ease;*/
+
+        /*transition-property: background-color;
+        transition-duration: 0.2s;
+        transition-timing-function: ease;
+        -webkit-transition-property: background-color;
+        -webkit-transition-duration: 0.2s;
+        -webkit-transition-timing-function: ease;
+        -moz-transition-property: background-color;
+        -moz-transition-duration: 0.2s;
+        -moz-transition-timing-function: ease;
+        -o-transition-property: background-color;
+        -o-transition-duration: 0.2s;
+        -o-transition-timing-function: ease;*/
+    }
+
+    a:hover {
+        filter: alpha(opacity=40);
+        /*box-shadow: inset 0 0 5px rgba(0,0,0,0.5);*/
+        background-color: #000url(0/);
+        background-color: rgba(0,0,0,0.6);
+        background-position: 7px -49px;
+    }
 }

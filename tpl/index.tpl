@@ -89,35 +89,35 @@
             <!-- feed -->
             <div class="feed clearfix">
                 <div class="user_icon">
-                    <a title="userTitle" href="#"><img src="/img/test/head.jpeg"></a>
+                    <a title="userTitle" href="#"><img src="/img/test/0.jpeg"></a>
                 </div>
 
-                <div class="feed_box">
-                    <a class="user_title">化学<span class="img_count">（16张）</span></a>
-                    <span class="feed_time">15:30</span>
-                    <h3 class="blog_title">3月21日《自然》杂志精选</h3>
+                <div class="feed_conbox">
+                    <a class="zhan_title" href="#">化学</a>
+                    <span class="feed_time">Today 15:30</span>
+                    <h3 class="blog_title">3月21日《自然》杂志精选<span class="img_count">（16张）</span></h3>
 
                     <!-- Text -->
-                    <div class="content_text">
+                    <div class="content_text clearfix">
                         <div class="fimg">
                             <a href="#"><img src="/img/test/2.jpg"></a>
                         </div>
                         <div class="content">
-                            <p>大脑中的语言组织方式说话的动作需要嘴唇、下巴、舌头和喉部的活动在时间上精确协调。人感觉运动皮层中的多电极记录显示，语言中所涉及的大脑区域是根据面部和声带的一种&躯体特定区&表示方式布局的，其中大量细胞相应于特定语音特征。研究人员特别感兴趣的是位于&腹侧感觉运动皮层&&最背端&的另一个喉部表示，它可能是专为控制语言而形成的一个特征。 环RNA怎样像海绵一... <a class="show_full">阅读全文</a></p>
+                            <p>大脑中的语言组织方式说话的动作需要嘴唇、下巴、舌头和喉部的活动在时间上精确协调。人感觉运动皮层中的多电极记录显示，语言中所涉及的大脑区域是根据面部和声带的一种&躯体特定区&表示方式布局的，其中大量细胞相应于特定语音特征。研究人员特别感兴趣的是位于&腹侧感觉运动皮层&&最背端&的另一个喉部表示，它可能是专为控制语言而形成的一个特征。 环RNA怎样像海绵一... <a class="show_full" href="#">阅读全文</a></p>
                         </div>
                     </div>
                     <!-- /Text -->
 
                     <div class="feed_control">
-                        <div class="feed-tag">
+                        <div class="feed_tag">
                             <a class="tag" href="#">#科技</a>
                             <a class="tag" href="#">#材料</a>
                         </div>
-                        <div class="feed-act">
-                            <a class="like_num">66</a>
-                            <a class="feed_share">share</a>
-                            <a class="feed_cmt">comment</a>
-                            <a class="feed_like">like</a>
+                        <div class="feed_act">
+                            <a class="like_num" href="#">66</a>
+                            <a class="feed_share" href="#">share</a>
+                            <a class="feed_cmt" href="#">comment</a>
+                            <a class="feed_like" href="#">like</a>
                         </div>
                     </div>
 
