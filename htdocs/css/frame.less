@@ -100,13 +100,16 @@ p {
 
 
 .main {
+    background-color: @bg_grey;
+
     .feed_list {
         @feed_width: @main_width - @sidebar_width; /*940-235=705*/
         float: left;
         width: @feed_width;
+        background-color: @test_bg;
 
         .feed {
-            padding: 20px 0;
+            padding-top: 20px;
             .user_icon{
                 height: 100px;
                 width: 100px;
@@ -159,6 +162,8 @@ p {
 
                         .show_full {
                             float: right;
+                            font-size: 13px;
+                            margin-top: 2px;
                         }
                     }
                 }
@@ -191,7 +196,15 @@ p {
     .side_bar {
         background: @bg_grey;
         float: left;
-        width: @sidebar_width;
+        padding: 25px;
+        width: @sidebar_width - 25*2;
+
+        .hot_tags {
+            margin-left: 20px;
+            .hot_title {
+                margin-bottom: 10px;
+            }
+        }
     }    
 }
 

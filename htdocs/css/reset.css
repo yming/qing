@@ -41,7 +41,7 @@ select {
 /* Fixes incorrect placement of numbers in ol’s in IE6/7 */ 
 ol { margin-left:2em; } 
 /* == clearfix == */ 
-.clearfix:after { 
+/*.clearfix:after { 
     content: “.”; 
     display: block; 
     height: 0; 
@@ -51,7 +51,7 @@ ol { margin-left:2em; }
 .clearfix {display: inline-block;} 
 * html .clearfix {height: 1%;} 
 .clearfix {display: block;}
-
+*/
 
 /*animation with a hover status change*/
 a {

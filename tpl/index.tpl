@@ -4,8 +4,8 @@
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
-    <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet/less" type="text/css" href="/css/frame.less">
 
     <script type="text/javascript" src="/js/lib/jquery-1.9.1.min.js"></script>
@@ -129,7 +129,22 @@
 
         <!-- sidebar -->
         <div class="side_bar">
-            Sidebar content 
+
+            <ul class="hot_tags">
+                <li class="hot_title">Hot Tags</li>
+                <li>
+                    <a href="/search?tag=xx">Food</a>
+                </li>
+                <li>
+                    <a href="/search?tag=xx">Food</a>
+                </li>
+                <li>
+                    <a href="/search?tag=xx">Food</a>
+                </li>
+                <li>
+                    <a href="/search?tag=xx">Food</a>
+                </li>
+            </ul>
         </div>
         <!-- /sidebar -->
     </div>
