@@ -25,15 +25,15 @@
     <!-- header -->
     <div class="header_box">
         <div class="header">
-            <div class="row menu_bar">
-                <div class="span1">
+            <div class="menu_bar">
+                <div class="">
                     <!-- <img class="img-rounded logo" src=""> -->
                 </div>
                 <div class="span2">
                     <h1>Zing</h1>
                 </div>
                 <div class="span6 offset1">
-                    <ul class="nav nav-pills text-center">
+                    <ul class="nav">
                         <li class="active">
                             <a href="#">Index</a>
                         </li>
@@ -45,18 +45,16 @@
                         </li>
                     </ul>
                 </div>
-                <div class="span2">
-                    <ul class="nav nav-pills">
-                        <li class="dropdown">
-                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">账号<b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                                <li><a href="#">设置</a></li>
-                                <li><a href="#">帮助</a></li>
-                                <li><a href="#"><i class="icon-ban-circle"></i>退出</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="nav-pills account">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">账号<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">设置</a></li>
+                            <li><a href="#">帮助</a></li>
+                            <li><a href="#"><i class="icon-ban-circle"></i>退出</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
         
             <!-- publisher -->
