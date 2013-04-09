@@ -25,60 +25,60 @@
     <!-- header -->
     <div class="header_box">
         <div class="header">
-            <div class="menu_bar">
-                <div class="">
-                    <!-- <img class="img-rounded logo" src=""> -->
-                </div>
-                <div class="span2">
-                    <h1>Zing</h1>
-                </div>
-                <div class="span6 offset1">
-                    <ul class="nav">
-                        <li class="active">
-                            <a href="#">Index</a>
-                        </li>
-                        <li>
-                            <a href="#">Good</a>
-                        </li>
-                        <li>
-                            <a href="#">Discovery</a>
-                        </li>
-                    </ul>
-                </div>
-                <ul class="nav-pills account">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">账号<b class="caret"></b></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">设置</a></li>
-                            <li><a href="#">帮助</a></li>
-                            <li><a href="#"><i class="icon-ban-circle"></i>退出</a></li>
-                        </ul>
+            <div class="">
+                <!-- <img class="img-rounded logo" src=""> -->
+            </div>
+            <div class="span2">
+                <h1>Zing</h1>
+            </div>
+            <div class="span6 offset1">
+                <ul class="nav">
+                    <li class="active">
+                        <a href="#">Index</a>
+                    </li>
+                    <li>
+                        <a href="#">Good</a>
+                    </li>
+                    <li>
+                        <a href="#">Discovery</a>
                     </li>
                 </ul>
             </div>
-        
-            <!-- publisher -->
-            <div class="publisher_box">
-                <div class="icon_box">
-                    <a href="#"><img src="img/test/head.jpeg"></a>
-                </div>
-                <div class="publisher">
-                    <div class="text"><a href="#"><img title="Text" src="" />Text</a></div>
-                    <div class="text"><a href="#"><img title="Image" src="" />Image</a></div>
-                    <div class="text"><a href="#"><img title="Audio" src="" />Audio</a></div>
-                    <div class="text"><a href="#"><img title="Video" src="" />video</a></div>
-                </div>
-                <div class="search">
-                    <div class="input-append">
-                        <input class="span2" placeholder="Tell me what you wanna see?" id="appendedInputButton" type="text">
-                        <button class="btn" type="button">Search</button>
-                    </div>
-                </div>
-            </div>
-            <!-- /publisher -->
+            <ul class="nav-pills account">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">账号<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">设置</a></li>
+                        <li><a href="#">帮助</a></li>
+                        <li><a href="#"><i class="icon-ban-circle"></i>退出</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
     <!-- /header -->
+
+    <!-- publisher -->
+    <div class="toolbar_box">
+        <div class="toolbar">
+            <div class="icon_box">
+                <a href="#"><img src="img/test/head.jpeg"></a>
+            </div>
+            <div class="publisher">
+                <div class="text"><a href="#"><img title="Text" src="" />Text</a></div>
+                <div class="text"><a href="#"><img title="Image" src="" />Image</a></div>
+                <div class="text"><a href="#"><img title="Audio" src="" />Audio</a></div>
+                <div class="text"><a href="#"><img title="Video" src="" />video</a></div>
+            </div>
+            <div class="search">
+                <div class="input-append">
+                    <input class="span2" placeholder="Tell me what you wanna see?" id="appendedInputButton" type="text">
+                    <button class="btn" type="button">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /publisher -->
 
     <!-- main content -->
     <div class="main clearfix">

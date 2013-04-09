@@ -26,26 +26,15 @@ p {
 }
 
 
-.header, .main, .footer {
+.header, .toolbar, .main, .footer {
     width: @main_width;
     margin: 0px auto;
 }
 
 .header_box {
     background-color: @bg_blue;
-}
 
-.header {
-    padding-bottom: 15px;
-
-    .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
-        background-color: @white;
-        color: #333333;
-    }
-
-
-    /*菜单导航*/
-    .menu_bar {
+    .header {
         height: 50px;
         padding: 20px 0;
         color: @white;
@@ -54,6 +43,7 @@ p {
         .nav {
             a {
                 color: @white;
+                text-decoration: none;
             }
             a:hover {
                 color: #333333;
@@ -75,7 +65,7 @@ p {
                     vertical-align: baseline;
                 }
                 a:hover {
-
+                    color: @white;
                 }
             }
         }
@@ -100,7 +90,13 @@ p {
         }
     }
 
-    .publisher_box {
+}
+
+.toolbar_box {
+    background-color: @bg_blue;
+    padding-bottom: 15px;
+
+    .toolbar {
         @pub_height: 100px;
         height: @pub_height;
 

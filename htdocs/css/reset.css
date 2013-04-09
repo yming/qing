@@ -54,7 +54,7 @@ ol { margin-left:2em; }
 */
 
 /*animation with a hover status change*/
-a {
+/*a {
 -webkit-transition-property: color, background-color;
 -moz-transition-property: color, background-color;
 -o-transition-property: color;
@@ -70,4 +70,4 @@ transition-duration: 0.3s;
 -o-transition-timing-function: ease;
 -ms-transition-timing-function: ease;
 transition-timing-function: ease;
-}
+}*/
