@@ -31,16 +31,16 @@
             <div class="span2">
                 <h1>Zing</h1>
             </div>
-            <div class="span6 offset1">
+            <div class="span6 offset2">
                 <ul class="nav">
                     <li class="active">
-                        <a href="#">Index</a>
+                        <a href="#">首页</a>
                     </li>
                     <li>
-                        <a href="#">Good</a>
+                        <a href="#">精选</a>
                     </li>
                     <li>
-                        <a href="#">Discovery</a>
+                        <a href="#">发现</a>
                     </li>
                 </ul>
             </div>
@@ -65,15 +65,15 @@
                 <a href="#"><img src="img/test/head.jpeg"></a>
             </div>
             <div class="publisher">
-                <div class="text"><a href="#"><img title="Text" src="" />Text</a></div>
-                <div class="text"><a href="#"><img title="Image" src="" />Image</a></div>
-                <div class="text"><a href="#"><img title="Audio" src="" />Audio</a></div>
-                <div class="text"><a href="#"><img title="Video" src="" />video</a></div>
+                <div class="pub_btn active"><a class="text" href="#" title="文字"></a></div>
+                <div class="pub_btn"><a class="picture" href="#" title="图片"></a></div>
+                <div class="pub_btn"><a class="video" href="#" title="视频"></a></div>
+                <div class="pub_btn"><a class="audio" href="#" title="音乐"></a></div>
             </div>
             <div class="search">
                 <div class="input-append">
-                    <input class="span2" placeholder="Tell me what you wanna see?" id="appendedInputButton" type="text">
-                    <button class="btn" type="button">Search</button>
+                    <input class="span2" placeholder="发现心动标签" id="appendedInputButton" type="text">
+                    <button class="btn" type="button">搜索</button>
                 </div>
             </div>
         </div>
@@ -113,9 +113,65 @@
                         </div>
                         <div class="feed_act">
                             <a class="like_num" href="#">66</a>
-                            <a class="feed_share" href="#">share</a>
-                            <a class="feed_cmt" href="#">comment</a>
-                            <a class="feed_like" href="#">like</a>
+                            <a class="feed_share" href="#">转发</a>
+                            <a class="feed_cmt" href="#">评论</a>
+                            <a class="feed_like" href="#">喜欢</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="feed clearfix">
+                <div class="user_icon">
+                    <a title="userTitle" href="#"><img src="/img/test/0.jpeg"></a>
+                </div>
+
+                <div class="feed_conbox">
+                    <a class="zhan_title" href="#">化学</a>
+                    <span class="feed_time">Today 15:30</span>
+                    <h3 class="blog_title">3月21日《自然》杂志精选<span class="img_count">（16张）</span></h3>
+
+                    <!-- Text -->
+                    <div class="content_pic clearfix">
+                        <a class="small_list" href="javascript:void(0);">
+                            <ul>
+                                <li><img src="/img/test/big/b1.jpg"></li>
+                                <li><img src="/img/test/big/b2.jpg"></li>
+                                <li><img src="/img/test/big/b3.jpg"></li>
+                                <li><img src="/img/test/big/b4.jpg"></li>
+                                <li><img src="/img/test/big/b5.jpg"></li>
+                                <li><img src="/img/test/big/b6.jpg"></li>
+                                <li><img src="/img/test/big/b7.jpg"></li>
+                                <li><img src="/img/test/big/b8.jpg"></li>
+                            </ul>
+                        </a>
+
+                        <a class="big_list" href="javascript:void(0);" style="display:none;">
+                            <ul>
+                                <li><img src="/img/test/big/b1.jpg"></li>
+                                <li><img src="/img/test/big/b2.jpg"></li>
+                                <li><img src="/img/test/big/b3.jpg"></li>
+                                <li><img src="/img/test/big/b4.jpg"></li>
+                                <li><img src="/img/test/big/b5.jpg"></li>
+                                <li><img src="/img/test/big/b6.jpg"></li>
+                                <li><img src="/img/test/big/b7.jpg"></li>
+                                <li><img src="/img/test/big/b8.jpg"></li>
+                            </ul>
+                        </a>
+                    </div>
+                    <!-- /Text -->
+
+                    <div class="feed_control">
+                        <div class="feed_tag">
+                            <a class="tag" href="#">#科技</a>
+                            <a class="tag" href="#">#材料</a>
+                        </div>
+                        <div class="feed_act">
+                            <a class="like_num" href="#">66</a>
+                            <a class="feed_share" href="#">转发</a>
+                            <a class="feed_cmt" href="#">评论</a>
+                            <a class="feed_like" href="#">喜欢</a>
                         </div>
                     </div>
 
@@ -127,22 +183,50 @@
 
         <!-- sidebar -->
         <div class="side_bar">
+            <div class="tag_cloud">
+                <h5 class="side_title">我的标签(20)</h5>
+                <ul class="tag_list clearfix">
+                    <li><a href="/search?tag=xx">科技</a></li>
+                    <li><a href="/search?tag=xx">数码</a></li>
+                    <li><a href="/search?tag=xx">食品</a></li>
+                    <li><a href="/search?tag=xx">个性</a></li>
+                    <li><a href="/search?tag=xx">云个性</a></li>
+                    <li><a href="/search?tag=xx">视觉</a></li>
+                    <li><a href="/search?tag=xx">两男</a></li>
+                    <li><a href="/search?tag=xx">美女</a></li>
+                    <li><a href="/search?tag=xx">艺术</a></li>
+                    <li><a href="/search?tag=xx">设计</a></li>
+                    <li><a href="/search?tag=xx">视觉差</a></li>
+                    <li><a href="/search?tag=xx">特别的美好</a></li>
+                    <li><a href="/search?tag=xx">奇特</a></li>
+                    <li><a href="/search?tag=xx">梦想</a></li>
+                    <li><a href="/search?tag=xx">幻觉</a></li>
+                    <li><a href="/search?tag=xx">摄影</a></li>
+                </ul>
+            </div>
 
-            <ul class="hot_tags">
-                <li class="hot_title">Hot Tags</li>
-                <li>
-                    <a href="/search?tag=xx">Food</a>
-                </li>
-                <li>
-                    <a href="/search?tag=xx">Food</a>
-                </li>
-                <li>
-                    <a href="/search?tag=xx">Food</a>
-                </li>
-                <li>
-                    <a href="/search?tag=xx">Food</a>
-                </li>
-            </ul>
+            <div class="tag_cloud">
+                <h5 class="side_title">热标签</h5>
+                <ul class="tag_list clearfix">
+                    <li><a href="/search?tag=xx">科技</a></li>
+                    <li><a href="/search?tag=xx">数码</a></li>
+                    <li><a href="/search?tag=xx">食品</a></li>
+                    <li><a href="/search?tag=xx">个性</a></li>
+                    <li><a href="/search?tag=xx">云个性</a></li>
+                    <li><a href="/search?tag=xx">视觉</a></li>
+                    <li><a href="/search?tag=xx">两男</a></li>
+                    <li><a href="/search?tag=xx">美女</a></li>
+                    <li><a href="/search?tag=xx">艺术</a></li>
+                    <li><a href="/search?tag=xx">设计</a></li>
+                    <li><a href="/search?tag=xx">视觉差</a></li>
+                    <li><a href="/search?tag=xx">特别的美好</a></li>
+                    <li><a href="/search?tag=xx">奇特</a></li>
+                    <li><a href="/search?tag=xx">梦想</a></li>
+                    <li><a href="/search?tag=xx">幻觉</a></li>
+                    <li><a href="/search?tag=xx">摄影</a></li>
+                </ul>
+            </div>
+            
         </div>
         <!-- /sidebar -->
     </div>
