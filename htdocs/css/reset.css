@@ -53,6 +53,9 @@ ol { margin-left:2em; }
 .clearfix {display: block;}
 */
 
+a {
+    font-size: 12px;
+}
 
 a:focus {
     outline: none;

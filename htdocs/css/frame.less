@@ -116,6 +116,8 @@ p {
 
 }
 
+@publisher_active_bgcolor: #C6D1FA;
+
 .toolbar_box {
     background-color: @bg_blue;
     padding-bottom: 15px;
@@ -136,10 +138,6 @@ p {
             line-height: @pub_height;
             vertical-align: middle;
             float: left;
-        }
-
-        .icon_box {
-            /*padding: 0px;*/
         }
 
         .publisher {
@@ -197,7 +195,7 @@ p {
 
             .active {
                 @active-y: -100px;
-                background-color: #C6D1FA;
+                background-color: @publisher_active_bgcolor;
 
                 .text {
                     background-position: @text-x @active-y;
@@ -253,10 +251,12 @@ p {
         @feed_width: @main_width - @sidebar_width; /*940-235=705*/
         float: left;
         width: @feed_width;
+        min-height: 600px;
         background-color: @test_bg;
 
         .feed {
             padding-top: 20px;
+
             .user_icon{
                 height: 100px;
                 width: 100px;
@@ -309,7 +309,6 @@ p {
 
                         .show_full {
                             float: right;
-                            font-size: 13px;
                             margin-top: 2px;
                         }
                     }
@@ -318,14 +317,19 @@ p {
                 .content_pic {
                     li {
                         text-align: center;
-                        float: left;
-                        width: 165px;
-                        height: 165px;
-                        overflow: hidden;
+                    }
 
-                        img {
-                            max-width: 250px;
-                            max-height: 250px;
+                    .small_list {
+                        li {
+                            display: inline-block;
+                            width: 165px;
+                            height: 165px;
+                            overflow: hidden;
+
+                            img {
+                                max-width: 250px;
+                                max-height: 250px;
+                            }
                         }
                     }
                 }
@@ -354,6 +358,13 @@ p {
                 visibility: visible;
             }
         }
+
+
+        /*publisher*/
+        .pubber_box {
+            background-color: @publisher_active_bgcolor;
+            padding: 20px;
+        }
     }
 
 
@@ -369,16 +380,23 @@ p {
         }
 
         .tag_cloud {
+            a {
+                text-decoration: none;
+                font-size: 13px;
+            }
 
             .tag_list {
                 margin-top: 10px;
+
                 li {
                     float: left;
                     margin: 5px 8px;
-                    a {
-                        text-decoration: none;
-                    }
                 }
+            }
+
+            .more_tag {
+                float: right;
+                color: ;
             }
         }
     }    

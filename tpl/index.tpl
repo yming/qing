@@ -84,6 +84,14 @@
     <div class="main clearfix">
         <!-- feed list -->
         <div class="feed_list">
+            <div class="pubber_box">
+                <div class="title_wrap">
+                    <textarea class="text_title" placeholder="Title"></textarea>
+                </div>
+                <textarea class="text_content" placeholder="Content(Allow Empty)"></textarea>
+            </div>
+
+
             <!-- feed -->
             <div class="feed clearfix">
                 <div class="user_icon">
@@ -106,13 +114,13 @@
                     </div>
                     <!-- /Text -->
 
-                    <div class="feed_control">
+                    <div class="feed_control clearfix">
                         <div class="feed_tag">
                             <a class="tag" href="#">#科技</a>
                             <a class="tag" href="#">#材料</a>
                         </div>
                         <div class="feed_act">
-                            <a class="like_num" href="#">66</a>
+                            <a class="hot_num" href="#">66</a>
                             <a class="feed_share" href="#">转发</a>
                             <a class="feed_cmt" href="#">评论</a>
                             <a class="feed_like" href="#">喜欢</a>
@@ -162,13 +170,13 @@
                     </div>
                     <!-- /Text -->
 
-                    <div class="feed_control">
+                    <div class="feed_control clearfix">
                         <div class="feed_tag">
                             <a class="tag" href="#">#科技</a>
                             <a class="tag" href="#">#材料</a>
                         </div>
                         <div class="feed_act">
-                            <a class="like_num" href="#">66</a>
+                            <a class="hot_num" href="#">66</a>
                             <a class="feed_share" href="#">转发</a>
                             <a class="feed_cmt" href="#">评论</a>
                             <a class="feed_like" href="#">喜欢</a>
@@ -225,6 +233,7 @@
                     <li><a href="/search?tag=xx">幻觉</a></li>
                     <li><a href="/search?tag=xx">摄影</a></li>
                 </ul>
+                <a class="more_tag" href="#">更多热门标签></a>
             </div>
             
         </div>
@@ -234,7 +243,7 @@
     
     <!-- footer -->
     <div class="footer">
-        Copyright Info!
+        Copyright © 2013!
     </div>
     <!-- /footer -->
 
