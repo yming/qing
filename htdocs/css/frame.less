@@ -37,10 +37,15 @@
     transform: rotate(@rotate) scale(@scale) skew(@skew) translate(@translate);
 }
 
+.opacity (@num) {
+    @ienum: @num*100;
+    opacity: @num;
+    filter: alpha(opacity=@ienum);
+}
+
 
 body {
     background-color: @test_bg;
-    font-family: "Microsoft Yahei";
 }
 
 p {
@@ -66,13 +71,16 @@ p {
         color: @white;
 
 
-        .nav {
+        .main_nav {
             a {
                 color: @white;
+                font-size: 16px;
                 text-decoration: none;
+                display: block;
             }
             a:hover {
                 color: #333333;
+                background-color: #EEEEEE;
             }
 
             li {
@@ -99,12 +107,20 @@ p {
 
         .account {
             float: right;
-            margin-top: 12px;
+            margin-top: 5px;
             margin-bottom: 0;
             >li {
                 >a {
+                    font-size: 14px;
                     color: @white;
+                    background: none;
                     text-decoration: none;
+                }
+                >a:hover {
+                    background: none;
+                }
+                >a:focus {
+                    background: none;
                 }
             }
 
@@ -161,6 +177,7 @@ p {
                     color: #003E5A;
                     background: url("/img/publisher-nav.png") no-repeat;
                     .transition(background-position, 0.3s, ease);
+                    .opacity(0.9);
                 }
                 a:hover {
                     color: #018FD1;
@@ -270,22 +287,32 @@ p {
 
             .feed_conbox {
                 @feed_conbox_width: @feed_width - 160; /*705-160=545*/
+                @link_color_grey: #a9a9a9;
+
                 float: left;
                 width: @feed_conbox_width; 
                 /*margin-left: 20px;*/
                 background-color: @bg_feed; /*white*/
                 padding: 20px 30px;
 
+                a {
+                    color: @link_color_grey;
+                    text-decoration: none;
+                }
+
+                a:hover {
+                    color: #7594b3;
+                }
+
                 .zhan_title {
                     font-size: 16px;
                     color: #626264;
-                    text-decoration: none;
                 }
 
                 .blog_title {
                     .img_count {
                         font-size: 14px;
-                        color: #D8D8DB;
+                        color: @link_color_grey;
                     }
                 }
 
@@ -339,6 +366,11 @@ p {
                 .feed_control {
                     margin-top: 15px;
 
+                    i {
+                        .opacity(0.2);
+                        margin-top: 2px;
+                    }
+
                     .feed_tag {
                         float: left;
                     }
@@ -348,6 +380,10 @@ p {
                         a {
                             margin: 0 7px;
                         }
+                    }
+
+                    .feed_like i:hover {
+                        .opacity(0.5);
                     }
                 }
             }
@@ -362,8 +398,46 @@ p {
 
         /*publisher*/
         .pubber_box {
-            background-color: @publisher_active_bgcolor;
+            /*background-color: @publisher_active_bgcolor;*/
+            background-color: #FFFFFF;
             padding: 20px;
+
+            .close {
+                padding: 1px;
+                border: 1px solid #000000;
+            }
+
+            textarea {
+                width: 100%;
+            }
+
+            .text_title {
+                resize: none;
+                height: 48px;
+                line-height: 30px;
+                padding: 7px;
+                font-size: 24px;
+                width: 100%;
+            }
+
+            .text_content {
+                height: 200px;
+                resize: vertical;
+            }
+
+            .input_mark {
+                margin: 10px 0 10px 5px;
+            }
+
+
+            .submit {
+                width: 100px;
+                float: right;
+            }
+
+            .pub_method {
+                width: 150px;
+            }
         }
     }
 

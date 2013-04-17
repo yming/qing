@@ -5,6 +5,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
     <link rel="stylesheet" type="text/css" href="/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/lib/google-bootstrap.css">
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet/less" type="text/css" href="/css/frame.less">
 
@@ -32,7 +33,7 @@
                 <h1>Zing</h1>
             </div>
             <div class="span6 offset2">
-                <ul class="nav">
+                <ul class="main_nav">
                     <li class="active">
                         <a href="#">首页</a>
                     </li>
@@ -44,7 +45,7 @@
                     </li>
                 </ul>
             </div>
-            <ul class="nav-pills account">
+            <ul class="nav nav-pills account">
                 <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">账号<b class="caret"></b></a>
                     <ul class="dropdown-menu">
@@ -85,10 +86,28 @@
         <!-- feed list -->
         <div class="feed_list">
             <div class="pubber_box">
+                <a class="close" href="#"><i class="icon-remove"></i></a>
                 <div class="title_wrap">
-                    <textarea class="text_title" placeholder="Title"></textarea>
+                    <h4 class="input_mark">
+                        <em>标题</em>
+                        <small>(选填)</small>
+                    </h4>
+                    <textarea class="text_title"></textarea>
                 </div>
-                <textarea class="text_content" placeholder="Content(Allow Empty)"></textarea>
+                <div class="content_wrap">
+                    <h4 class="input_mark">
+                        <em>内容</em>
+                    </h4>
+                    <textarea class="text_content"></textarea>
+                </div>
+                <div class="ctr_wrap clearfix">
+                    <select class="pub_method">
+                        <option value="now" selected="selected">现在发布</option>
+                        <option value="timer">定时发布</option>
+                        <option value="draft">存为草稿</option>
+                    </select>
+                    <button id="pubber_submit_text" class="btn btn-success btn-large submit" data-loading-text="发布中...">发布</button>
+                </div>
             </div>
 
 
@@ -116,14 +135,15 @@
 
                     <div class="feed_control clearfix">
                         <div class="feed_tag">
+                            <i class="icon-tag"></i>
                             <a class="tag" href="#">#科技</a>
                             <a class="tag" href="#">#材料</a>
                         </div>
                         <div class="feed_act">
-                            <a class="hot_num" href="#">66</a>
-                            <a class="feed_share" href="#">转发</a>
+                            <a class="hot_num" href="#">热度(66)</a>
+                            <a class="feed_share" href="#">转载</a>
                             <a class="feed_cmt" href="#">评论</a>
-                            <a class="feed_like" href="#">喜欢</a>
+                            <a class="feed_like" href="#" title="like"><i class="icon-heart"></i></a>
                         </div>
                     </div>
 
@@ -152,6 +172,7 @@
                                 <li><img src="/img/test/big/b6.jpg"></li>
                                 <li><img src="/img/test/big/b7.jpg"></li>
                                 <li><img src="/img/test/big/b8.jpg"></li>
+                                <li><img src="/img/test/big/b9.jpg"></li>
                             </ul>
                         </a>
 
@@ -165,6 +186,7 @@
                                 <li><img src="/img/test/big/b6.jpg"></li>
                                 <li><img src="/img/test/big/b7.jpg"></li>
                                 <li><img src="/img/test/big/b8.jpg"></li>
+                                <li><img src="/img/test/big/b9.jpg"></li>
                             </ul>
                         </a>
                     </div>
@@ -176,10 +198,10 @@
                             <a class="tag" href="#">#材料</a>
                         </div>
                         <div class="feed_act">
-                            <a class="hot_num" href="#">66</a>
-                            <a class="feed_share" href="#">转发</a>
-                            <a class="feed_cmt" href="#">评论</a>
-                            <a class="feed_like" href="#">喜欢</a>
+                            <a class="hot_num" title="热度" href="#">热度(66)</a>
+                            <a class="feed_share" title="转载" href="#">转载</a>
+                            <a class="feed_cmt" title="评论" href="#">评论</a>
+                            <a class="feed_like" title="喜欢" href="#">喜欢</a>
                         </div>
                     </div>
 
@@ -243,7 +265,7 @@
     
     <!-- footer -->
     <div class="footer">
-        Copyright © 2013!
+        Copyright © 2013
     </div>
     <!-- /footer -->
 

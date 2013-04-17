@@ -7,11 +7,11 @@ thead, tr, th, td {
     margin: 0; 
     padding: 0; 
     border: 0; 
-    outline: 0; 
+    outline: 0; !important;
     font-weight: inherit; 
     font-style: inherit; 
-    font-size: 100%; 
-    font-family: inherit; 
+    /*font-size: 100%; */
+    font-family: "Hiragino Sans GB","Hiragino Sans GB W3","Microsoft YaHei","微软雅黑",tahoma,arial,simsun,"宋体";
     vertical-align: baseline; 
 } 
 :focus { 
@@ -32,7 +32,7 @@ ol, ul {
     list-style: none; 
 } 
 input, textarea, select, button { 
-    font-size: 100%; 
+    /*font-size: 100%; */
     font-family: inherit; 
 } 
 select { 
@@ -59,4 +59,8 @@ a {
 
 a:focus {
     outline: none;
+}
+
+textarea {
+    border-radius: 0;
 }
