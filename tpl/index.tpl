@@ -101,11 +101,16 @@
                     <textarea class="text_content"></textarea>
                 </div>
                 <div class="ctr_wrap clearfix">
-                    <select class="pub_method">
+                    <select name="pub_range" id="" class="pub_option">
+                        <option value="">所有人可见</option>
+                        <option value="">仅自己可见</option>
+                    </select>
+                    <select name="pub_method" class="pub_option">
                         <option value="now" selected="selected">现在发布</option>
                         <option value="timer">定时发布</option>
                         <option value="draft">存为草稿</option>
                     </select>
+                    <textarea name="pub_tag" id="" cols="30" rows="10" placeholder="添加标签，用回车或逗号分隔" class="pub_tag"></textarea>
                     <button id="pubber_submit_text" class="btn btn-success btn-large submit" data-loading-text="发布中...">发布</button>
                 </div>
             </div>
