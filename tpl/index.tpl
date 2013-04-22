@@ -112,6 +112,7 @@
                     </select>
                     <textarea name="pub_tag" id="" cols="30" rows="10" placeholder="添加标签，用回车或逗号分隔" class="pub_tag"></textarea>
                     <button id="pubber_submit_text" class="btn btn-success btn-large submit" data-loading-text="发布中...">发布</button>
+                    <a class="pub_preview" href="#">预览</a>
                 </div>
             </div>
 
