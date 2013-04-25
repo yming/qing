@@ -264,153 +264,158 @@ p {
 
 
 .main {
+    @feed_width: @main_width - @sidebar_width; /*940-235=705*/
     background-color: @bg_grey;
 
-    .feed_list {
-        @feed_width: @main_width - @sidebar_width; /*940-235=705*/
+    .main_box {
         float: left;
         width: @feed_width;
-        min-height: 600px;
-        background-color: @test_bg;
+        .feed_list {
+            min-height: 600px;
+            background-color: @test_bg;
 
-        .feed {
-            padding-top: 20px;
+            .feed {
+                padding-bottom: 20px;
 
-            .user_icon{
-                height: 100px;
-                width: 100px;
-                float: left;
-
-                img {
+                .user_icon{
                     height: 100px;
                     width: 100px;
-                }
-            }
+                    float: left;
 
-            .feed_conbox {
-                @feed_conbox_width: @feed_width - 160; /*705-160=545*/
-                @link_color_grey: #a9a9a9;
-
-                float: left;
-                width: @feed_conbox_width; 
-                /*margin-left: 20px;*/
-                background-color: @bg_feed; /*white*/
-                padding: 20px 30px;
-
-                a {
-                    color: @link_color_grey;
-                    text-decoration: none;
+                    img {
+                        height: 100px;
+                        width: 100px;
+                    }
                 }
 
-                a:hover {
-                    color: #7594b3;
-                }
+                .feed_conbox {
+                    @feed_conbox_width: @feed_width - 160; /*705-160=545*/
+                    @link_color_grey: #a9a9a9;
 
-                .zhan_title {
-                    font-size: 16px;
-                    color: #626264;
-                }
+                    float: left;
+                    width: @feed_conbox_width; 
+                    /*margin-left: 20px;*/
+                    background-color: @bg_feed; /*white*/
+                    padding: 20px 30px;
 
-                .blog_title {
-                    .img_count {
-                        font-size: 14px;
+                    a {
                         color: @link_color_grey;
+                        text-decoration: none;
                     }
-                }
 
-                .feed_time {
-                    float: right;
-                    color: #8F8F91;
-                    visibility: hidden;
-                }
-
-
-                .content_text {
-                    .fimg {
-                        float: left;
-                        width: 250px;
-                        text-align: center;
+                    a:hover {
+                        color: #7594b3;
                     }
-                    .content {
-                        float: left;
-                        width: 275px;
-                        margin-left: 15px; 
 
-                        .show_full {
-                            float: right;
-                            margin-top: 2px;
+                    .zhan_title {
+                        font-size: 16px;
+                        color: #626264;
+                    }
+
+                    .blog_title {
+                        .img_count {
+                            font-size: 14px;
+                            color: @link_color_grey;
                         }
                     }
-                }
 
-                .content_pic {
-                    li {
-                        text-align: center;
+                    .feed_time {
+                        float: right;
+                        color: #8F8F91;
+                        visibility: hidden;
                     }
 
-                    .small_list {
-                        li {
-                            /*display: inline-block;*/
-                            width: 165px;
-                            height: 165px;
-                            overflow: hidden;
-                            float: left;
-                            margin: 1px;
 
-                            img {
-                                max-width: 250px;
-                                max-height: 250px;
+                    .content_text {
+                        .fimg {
+                            float: left;
+                            width: 250px;
+                            text-align: center;
+                        }
+                        .content {
+                            float: left;
+                            width: 275px;
+                            margin-left: 15px; 
+
+                            .show_full {
+                                float: right;
+                                margin-top: 2px;
                             }
                         }
                     }
-                }
 
+                    .content_pic {
+                        li {
+                            text-align: center;
+                        }
 
+                        .small_list {
+                            li {
+                                /*display: inline-block;*/
+                                width: 165px;
+                                height: 165px;
+                                overflow: hidden;
+                                float: left;
+                                margin: 1px;
 
-                .feed_control {
-                    margin-top: 15px;
-
-                    i {
-                        .opacity(0.2);
-                        margin-top: 2px;
-                    }
-
-                    .feed_tag {
-                        float: left;
-                    }
-                    .feed_act {
-                        float: right;
-
-                        a {
-                            margin: 0 7px;
+                                img {
+                                    max-width: 250px;
+                                    max-height: 250px;
+                                }
+                            }
                         }
                     }
 
-                    .feed_like i:hover {
-                        .opacity(0.5);
+
+
+                    .feed_control {
+                        margin-top: 15px;
+
+                        i {
+                            .opacity(0.2);
+                            margin-top: 2px;
+                        }
+
+                        .feed_tag {
+                            float: left;
+                        }
+                        .feed_act {
+                            float: right;
+
+                            a {
+                                margin: 0 7px;
+                            }
+                        }
+
+                        .feed_like i:hover {
+                            .opacity(0.5);
+                        }
                     }
                 }
             }
-        }
 
-        .feed:hover {
-            .feed_time {
-                visibility: visible;
+            .feed:hover {
+                .feed_time {
+                    visibility: visible;
+                }
             }
+
         }
 
 
         /*publisher*/
         .pubber_box {
-            .pub_text, .pub_img {
+            background-color: @test_bg;
+            padding-bottom: 15px;
+            .pub_text, .pub_img, .pub_video {
                 /*background-color: @publisher_active_bgcolor;*/
                 background-color: #FFFFFF;
                 padding: 20px;
-                margin-bottom: 5px;
 
                 .close {
                     padding: 1px;
                     border: 1px solid #000000;
+                    margin-bottom: 10px;
                 }
 
                 textarea {
@@ -455,6 +460,10 @@ p {
                     margin-left: 20px;
                     resize: none;
                 }
+
+                .pub_title {
+                    font-size: 12px;
+                }
             }
 
             .pub_text {
@@ -466,12 +475,32 @@ p {
 
             .pub_img {
                 .add_img {
+                    margin: 20px auto;
+                    display: block;
+                    width: 300px;
+                    height: 50px;
+                }
+            }
+
+            .pub_video {
+                .add_video_input {
                     margin: 20px 0;
+                    width: 500px;
+                    height: 50px;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .add_video {
+                    height: 48px;
+                    width: 80px;
+                    margin-left: 10px;
                 }
             }
             
         }
     }
+    
 
 
     .side_bar {
