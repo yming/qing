@@ -69,7 +69,7 @@
                 <div class="pub_btn active"><a class="text" href="#" title="文字"></a></div>
                 <div class="pub_btn"><a class="picture" href="#" title="图片"></a></div>
                 <div class="pub_btn"><a class="video" href="#" title="视频"></a></div>
-                <div class="pub_btn"><a class="audio" href="#" title="音乐"></a></div>
+                <!-- <div class="pub_btn"><a class="audio" href="#" title="音乐"></a></div> -->
             </div>
             <div class="search">
                 <div class="input-append">
