@@ -185,6 +185,8 @@
             <div class="feed_list">
                 
                 <!-- feed -->
+                {{include file="snippets/feed.tpl"}}
+
                 <div class="feed clearfix">
                     <div class="user_icon">
                         <a title="userTitle" href="#"><img src="/img/test/0.jpeg"></a>
@@ -200,9 +202,9 @@
                             <div class="fimg">
                                 <a href="#"><img src="/img/test/2.jpg"></a>
                             </div>
-                            <div class="content">
-                                <p>大脑中的语言组织方式说话的动作需要嘴唇、下巴、舌头和喉部的活动在时间上精确协调。人感觉运动皮层中的多电极记录显示，语言中所涉及的大脑区域是根据面部和声带的一种&躯体特定区&表示方式布局的，其中大量细胞相应于特定语音特征。研究人员特别感兴趣的是位于&腹侧感觉运动皮层&&最背端&的另一个喉部表示，它可能是专为控制语言而形成的一个特征。 环RNA怎样像海绵一... <a class="show_full" href="#">阅读全文</a></p>
-                            </div>
+                            <!-- <div class="content"> -->
+                            <p class="content">大脑中的语言组织方式说话的动作需要嘴唇、下巴、舌头和喉部的活动在时间上精确协调。人感觉运动皮层中的多电极记录显示，语言中所涉及的大脑区域是根据面部和声带的一种&躯体特定区&表示方式布局的，其中大量细胞相应于特定语音特征。研究人员特别感兴趣的是位于&腹侧感觉运动皮层&&最背端&的另一个喉部表示，它可能是专为控制语言而形成的一个特征。 环RNA怎样像海绵一... <a class="show_full" href="#">阅读全文</a></p>
+                            <!-- </div> -->
                         </div>
                         <!-- /Text -->
 
@@ -223,7 +225,7 @@
                     </div>
                 </div>
                 
-                <div class="feed clearfix">
+                <div class="feed clearfix last">
                     <div class="user_icon">
                         <a title="userTitle" href="#"><img src="/img/test/0.jpeg"></a>
                     </div>
@@ -346,7 +348,7 @@
     <div class="affix back_top"><a title="返回顶部" href="#">up</a></div>
 
     <script type="text/javascript">
-        less.watch();
+        // less.watch();
     </script>
 </body>
 </html>

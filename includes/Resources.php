@@ -23,8 +23,18 @@ class Resources {
                     'dbname' => 'qing',
                     'username' => 'root',
                     'password' => 'root',);
-        return Zend_Db::factory('PDO_MYSQL', $config);
+        $dbAdapter = Zend_Db::factory('PDO_MYSQL', $config);
+        $dbAdapter->query("set names 'utf8'");
+        return $dbAdapter;
     }
+
+    /**
+    * 使用js的console.log将变量打印到控制台
+    */
+    public function var_log($row=array()) {
+        echo "<script>console.log(".json_encode($row).");</script>";
+    } 
+    
 }
 
 ?>
