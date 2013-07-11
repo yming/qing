@@ -17,12 +17,6 @@
     <title>{{$title}}</title>
 </head>
 <body>
-<!-- <p>{{$content}}</p>
-<p>id:{{$post.id}}</p>
-<p>uid:{{$post.uid}}</p>
-<p>content:{{$post.content}}</p>
-<p>date:{{$post.post_date}}</p>
--->
     <!-- header -->
     <div class="header_box">
         <div class="header">
@@ -63,7 +57,7 @@
     <div class="toolbar_box">
         <div class="toolbar">
             <div class="icon_box">
-                <a href="#"><img src="img/test/head.jpeg"></a>
+                <a href="#"><img src="/img/test/head.jpeg"></a>
             </div>
             <div class="publisher">
                 <div class="pub_btn active"><a class="text" href="#" title="文字"></a></div>
@@ -85,7 +79,7 @@
     <div class="main clearfix">
         <div class="main_box">
             <!-- 发布器 -->
-            <div class="pubber_box">
+            <div class="pubber_box" style="display:none;">
                 <!-- 发布文字 -->
                 <div class="pub_text" style="display:none;">
                     <a class="close" href="#"><i class="icon-remove"></i></a>
